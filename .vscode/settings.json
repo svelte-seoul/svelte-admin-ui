@@ -1,0 +1,28 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "svelte",
+    "html"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "prettier.configPath": ".prettierrc.js",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "svelte.plugin.css.diagnostics.enable": false,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "i18n-ally.localesPaths": []
+}

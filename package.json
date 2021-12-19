@@ -1,0 +1,48 @@
+{
+  "name": "svelte-routify-typescript",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev": "vite",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint src --ext .ts,.js,.svelte",
+    "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
+    "test": "jest"
+  },
+  "dependencies": {
+    "svelte-i18n": "^3.3.13",
+    "svelte-theme": "^1.4.3"
+  },
+  "devDependencies": {
+    "@dooboo/eslint-config-svelte": "^0.0.7",
+    "@roxi/routify": "^3.0.0-next.69",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.13",
+    "@testing-library/svelte": "^3.0.3",
+    "@tsconfig/svelte": "^2.0.1",
+    "@types/jest": "^27.0.3",
+    "babel-jest": "^27.4.2",
+    "eslint": "^8.4.0",
+    "jest": "^27.4.3",
+    "postcss": "^8.4.4",
+    "postcss-cssnext": "^3.1.1",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-load-config": "^3.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-plugin": "^1.0.0",
+    "postcss-preset-env": "^7.0.1",
+    "precss": "^4.0.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-svelte": "^2.5.1",
+    "svelte": "^3.39.0",
+    "svelte-jester": "^2.1.5",
+    "svelte-preprocess": "^4.7.0",
+    "ts-jest": "^27.0.7",
+    "ts-node": "10.4.0",
+    "typescript": "^4.5.2",
+    "vite": "^2.2.3"
+  }
+}

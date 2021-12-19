@@ -1,0 +1,43 @@
+name: CI Web
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.22.2
+
+      - name: Install modules
+        run: pnpm install
+
+      - name: Check linting
+        run: pnpm lint
+
+      - name: Build typescript
+        run: pnpm tsc
+
+      - name: Remove tsc build
+        run: rm -rf build
+
+      - name: Test
+        run: pnpm test -- --coverage
+
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v1
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+      #     directory: ./coverage/
+      #     flags: unittests
+      #     name: codecov-umbrella
+      #     fail_ci_if_error: false
+      #     path_to_write_report: ./coverage/codecov_report.gz
