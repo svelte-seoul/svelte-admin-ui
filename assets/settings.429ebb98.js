@@ -1,0 +1,1 @@
+import{S as i,i as a,s as o,e as c,b as f,n as s,g}from"./vendor.cc14945c.js";function l(e){let t;return{c(){t=c("p")},m(n,r){f(n,t,r),t.innerHTML=e[0]},p:s,i:s,o:s,d(n){n&&g(t)}}}function p(e){return["This is <strong>Settings!</strong>"]}class m extends i{constructor(t){super();a(this,t,p,l,o,{})}}export{m as default};

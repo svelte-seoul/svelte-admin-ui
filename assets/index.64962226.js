@@ -1,1 +1,0 @@
-import{S as a,i,s as l,p as u,u as p,q as c,r as m}from"./vendor.51179ee1.js";function f(s,t,e){let n,r;return u(s,p,o=>e(0,n=o)),u(s,c,o=>e(1,r=o)),m(()=>{r(n("/sign-in"))}),[]}class _ extends a{constructor(t){super();i(this,t,f,null,l,{})}}export{_ as default};
