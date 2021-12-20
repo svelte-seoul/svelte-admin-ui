@@ -1,4 +1,4 @@
-# Svelte Routify Typescript
+# Svelte Admin UI
 
 [![CI Web](https://github.com/svelte-seoul/svelte-routify-typescript/actions/workflows/ci.yml/badge.svg)](https://github.com/svelte-seoul/svelte-routify-typescript/actions/workflows/ci.yml)
 [![Github Pages](https://github.com/svelte-seoul/svelte-admin-ui/actions/workflows/pages.yml/badge.svg)](https://github.com/svelte-seoul/svelte-admin-ui/actions/workflows/pages.yml)
