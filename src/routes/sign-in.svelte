@@ -11,7 +11,16 @@
     justify-content: center;
     align-content: center;
     grid-row-gap: 8px;
+
+    :global(.edit-text) {
+      margin-top: 6px;
+    }
+
+    :global(.button) {
+      margin-top: 8px;
+    }
   }
+
   .logo {
     filter: var(--logo);
     width: 20%;
@@ -22,11 +31,14 @@
   .icon {
     margin-left: 12px;
     width: 24px;
-    filter: invert(0.5);
+  }
+
+  .black {
+    color: var(--text-contrast);
   }
 
   .text {
-    color: var(--text-contrast);
+    color: var(--text);
   }
 
   h3 {
@@ -39,53 +51,42 @@
 <script lang="ts">
   import {_} from 'svelte-i18n';
   import {svgLock, svgLogo, svgMail} from '../utils/icons';
-  import EditText from '../layouts/edittext.svelte';
+  import EditText from '../layouts/edit-text.svelte';
   import Button from '../layouts/button.svelte';
 
   let loading = false;
   let email: string;
   let password: string;
 
-  const handleLogin = async () => {
-    // try {
-    //   loading = true;
-    //   const {error} = await supabase.auth.signIn({
-    //     email,
-    //     password,
-    //   });
-    //   if (error) {
-    //     throw error;
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // } finally {
-    //   loading = false;
-    // }
-  };
+  const handleLogin = async () => {};
 </script>
 
 <div class="container">
   <img class="logo" src={svgLogo} alt="logo" />
   <h3>{$_('sign-in.title')}</h3>
-  <EditText
-    containerStyle="margin-bottom: 8px"
-    inputStyle="font-size: 14px;"
-    type="email"
-    placeholder="email@email.com"
-  >
+  <EditText type="email" placeholder="email@email.com">
     <img slot="leftElement" class="icon" src={svgMail} alt="email" />
   </EditText>
-  <EditText
-    containerStyle="margin-bottom: 8px"
-    inputStyle="font-size: 14px;"
-    type="password"
-    placeholder="********"
-  >
+  <EditText type="password" placeholder="********">
     <img slot="leftElement" class="icon" src={svgLock} alt="lock" />
   </EditText>
   <Button on:click={handleLogin} primary disabled={loading} loading={loading}>
-    <div class="text" style="font-weight: 500;">
+    <div class="black">
       {$_('sign-in.login')}
     </div>
   </Button>
+  <Button
+    on:click={handleLogin}
+    disabled={loading}
+    loading={loading}
+    text={$_('sign-in.sign-up')}
+  />
+  <Button
+    style="margin-top: -2px; font-size: 14px; text-decoration: underline;"
+    transparent
+    on:click={handleLogin}
+    disabled={loading}
+    loading={loading}
+    text={$_('sign-in.look-around')}
+  />
 </div>

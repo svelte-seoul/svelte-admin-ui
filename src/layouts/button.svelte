@@ -1,5 +1,5 @@
 <style lang="postcss">
-  button {
+  .button {
     background-color: var(--paper);
     color: var(--text);
 
@@ -54,6 +54,16 @@
     color: white;
   }
 
+  .transparent {
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
   .loader {
     border: 2px solid var(--background);
     border-top: 2px solid var(--primary);
@@ -80,9 +90,11 @@
   export let secondary = false;
   export let positive = false;
   export let negative = false;
+  export let transparent = false;
   export let size: 'small' | 'medium' = 'medium';
   export let type: 'submit' | undefined = undefined;
   export let style = '';
+  export let text = '';
   export let disabled = false;
   export let loading = false;
 
@@ -94,13 +106,14 @@
 </script>
 
 <button
+  class="button"
   class:primary
   class:secondary
   class:positive
   class:negative
+  class:transparent
   class:small={size === 'small'}
   class:medium={size === 'medium'}
-  class={$$props.class}
   type={type}
   style={style}
   disabled={disabled}
@@ -109,6 +122,10 @@
   {#if loading}
     <div class="loader" />
   {:else}
-    <slot />
+    <slot>
+      {#if text}
+        <div>{text}</div>
+      {/if}
+    </slot>
   {/if}
 </button>

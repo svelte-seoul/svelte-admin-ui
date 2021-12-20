@@ -1,4 +1,4 @@
-import Button from '../button.svelte';
+import Button from './button.svelte';
 import {render} from '@testing-library/svelte';
 
 it('should render without error', () => {

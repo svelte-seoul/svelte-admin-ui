@@ -7,6 +7,8 @@
   },
   "sign-in": {
     "title": "User Program",
-    "login": "Login"
+    "login": "Login",
+    "sign-up": "Sign Up",
+    "look-around": "Look around"
   }
 }
