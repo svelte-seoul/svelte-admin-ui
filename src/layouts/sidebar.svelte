@@ -1,0 +1,45 @@
+<style lang="postcss">
+  .active {
+    color: var(--link);
+  }
+
+  aside {
+    border-right: 1px solid var(--border);
+    padding: 40px 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+
+      display: grid;
+      grid-template-rows: repeat(10, 40px);
+      grid-gap: 10px;
+      justify-content: center;
+      justify-items: center;
+    }
+  }
+</style>
+
+<script lang="ts">
+  import {isActive, url} from '@roxi/routify';
+  import {_} from 'svelte-i18n';
+
+  export let context: any;
+
+  const {node} = context;
+</script>
+
+<aside>
+  <nav>
+    <ul>
+      <li>
+        <a class={$isActive($url('/home')) ? 'active' : ''} href={$url('/home')}
+          >Home</a
+        >
+      </li>
+      <li><a href="">link</a></li>
+      <li><a href="">link</a></li>
+    </ul>
+  </nav>
+</aside>

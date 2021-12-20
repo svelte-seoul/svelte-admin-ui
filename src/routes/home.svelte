@@ -1,5 +1,5 @@
 <script lang="ts">
-  let string = `This is <strong>Temp!</strong>`;
+  let string = `This is <strong>Home!</strong>`;
 </script>
 
 <p>{@html string}</p>

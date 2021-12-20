@@ -9,6 +9,7 @@
     "title": "유저 프로그램",
     "login": "로그인",
     "sign-up": "회원가입",
-    "look-around": "둘러보기"
+    "look-around": "둘러보기",
+    "logout": "로그아웃"
   }
 }

@@ -9,6 +9,7 @@
     "title": "User Program",
     "login": "Login",
     "sign-up": "Sign Up",
-    "look-around": "Look around"
+    "look-around": "Look around",
+    "logout": "Logout"
   }
 }
