@@ -38,8 +38,11 @@
           >Home</a
         >
       </li>
-      <li><a href="">link</a></li>
-      <li><a href="">link</a></li>
+      <li>
+        <a class={$isActive($url('/users')) ? 'active' : ''} href={$url('/users/[id]', {id: 'user123'})}
+          >Users</a
+        >
+      </li>
     </ul>
   </nav>
 </aside>
