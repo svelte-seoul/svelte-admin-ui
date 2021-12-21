@@ -39,7 +39,7 @@
         >
       </li>
       <li>
-        <a class={$isActive($url('/users')) ? 'active' : ''} href={$url('/users/[id]', {id: 'user123'})}
+        <a class={$isActive($url('/users')) ? 'active' : ''} href={$url('/users')}
           >Users</a
         >
       </li>
