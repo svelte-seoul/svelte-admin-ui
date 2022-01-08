@@ -37,10 +37,6 @@
     color: var(--text-contrast);
   }
 
-  .text {
-    color: var(--text);
-  }
-
   h3 {
     margin-bottom: 60px;
     font-size: 28px;
@@ -50,24 +46,45 @@
 
 <script lang="ts">
   import {_} from 'svelte-i18n';
-  import {svgLock, svgLogo, svgMail} from '../utils/icons';
-  import EditText from '../layouts/edit-text.svelte';
-  import Button from '../layouts/button.svelte';
+  import {svgLock, svgLogo, svgMail} from '../../utils/icons';
+  import EditText from '../../layouts/edit-text.svelte';
+  import Button from '../../layouts/button.svelte';
+  import {admin} from '../../stores/userStore';
+  import {goto, url} from '@roxi/routify';
+  import {setStorage} from '../../utils/storage.svelte';
 
   let loading = false;
   let email: string;
   let password: string;
 
-  const handleLogin = async () => {};
+  if ($admin) {
+    alert($_('common.already_signed_in'));
+    $goto($url('/home/main'));
+  }
+
+  const handleLogin = () => {
+    if (!email || !password) {
+      return;
+    }
+
+    $admin = {
+      displayName: 'admin',
+      role: 'MAIN',
+    };
+
+    setStorage('token', 'temp token');
+
+    $goto($url('/home/main'));
+  };
 </script>
 
 <div class="container">
   <img class="logo" src={svgLogo} alt="logo" />
   <h3>{$_('sign-in.title')}</h3>
-  <EditText type="email" placeholder="email@email.com">
+  <EditText type="email" placeholder="email@email.com" bind:value={email}>
     <img slot="leftElement" class="icon" src={svgMail} alt="email" />
   </EditText>
-  <EditText type="password" placeholder="********">
+  <EditText type="password" placeholder="********" bind:value={password}>
     <img slot="leftElement" class="icon" src={svgLock} alt="lock" />
   </EditText>
   <Button on:click={handleLogin} primary disabled={loading} loading={loading}>
@@ -76,7 +93,7 @@
     </div>
   </Button>
   <Button
-    on:click={handleLogin}
+    on:click={() => {}}
     disabled={loading}
     loading={loading}
     text={$_('sign-in.sign-up')}
@@ -84,7 +101,7 @@
   <Button
     style="margin-top: -2px; font-size: 14px; text-decoration: underline;"
     transparent
-    on:click={handleLogin}
+    on:click={() => {}}
     disabled={loading}
     loading={loading}
     text={$_('sign-in.look-around')}

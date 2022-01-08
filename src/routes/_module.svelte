@@ -1,27 +1,27 @@
-<style lang="postcss">
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr;
-  }
-
-  .content {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    grid-template-rows: 1fr;
-  }
-</style>
-
 <script lang="ts">
-  import {context, goto, url} from '@roxi/routify';
-  import Header from '../layouts/header.svelte';
-  import Sidebar from '../layouts/sidebar.svelte';
+  import {goto, url} from '@roxi/routify';
+  import {admin} from '../stores/userStore';
+  import {getStorage} from '../utils/storage.svelte';
+
+  const shouldRedirect = (): boolean => {
+    const ignorePath = ['/auth/sign-in', '/auth/sign-up'];
+    const currentPath = location.pathname;
+
+    return !ignorePath.includes(currentPath);
+  };
+
+  $: if (!$admin) {
+    if (getStorage('token')) {
+      $admin = {
+        displayName: 'admin',
+        role: 'MAIN',
+      };
+
+      $goto($url('/home/main'));
+    } else if (shouldRedirect()) {
+      $goto($url('/auth/sign-in'));
+    }
+  }
 </script>
 
-<div class="container">
-  <Header context={$context} />
-  <div class="content">
-    <Sidebar context={$context} />
-    <slot />
-  </div>
-</div>
+<slot />
