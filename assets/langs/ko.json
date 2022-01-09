@@ -11,5 +11,6 @@
     "sign-up": "회원가입",
     "look-around": "둘러보기",
     "logout": "로그아웃"
-  }
+  },
+  "already_signed_in": "이미 로그인되어 있습니다."
 }

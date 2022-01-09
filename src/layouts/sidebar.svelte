@@ -24,24 +24,26 @@
 <script lang="ts">
   import {isActive, url} from '@roxi/routify';
   import {_} from 'svelte-i18n';
-
-  export let context: any;
-
-  const {node} = context;
 </script>
 
 <aside>
   <nav>
     <ul>
       <li>
-        <a class={$isActive($url('/home')) ? 'active' : ''} href={$url('/home')}
-          >Home</a
+        <a
+          class={$isActive($url('/home/main')) ? 'active' : ''}
+          href={$url('/home/main')}
         >
+          Home
+        </a>
       </li>
       <li>
-        <a class={$isActive($url('/users')) ? 'active' : ''} href={$url('/users')}
-          >Users</a
+        <a
+          class={$isActive($url('/home/users')) ? 'active' : ''}
+          href={$url('/home/users')}
         >
+          Users
+        </a>
       </li>
     </ul>
   </nav>

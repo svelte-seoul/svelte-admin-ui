@@ -11,5 +11,6 @@
     "sign-up": "Sign Up",
     "look-around": "Look around",
     "logout": "Logout"
-  }
+  },
+  "already_signed_in": "Already signed in"
 }

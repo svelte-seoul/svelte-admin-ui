@@ -67,29 +67,28 @@
 <script lang="ts">
   import {isActive, url} from '@roxi/routify';
   import {_} from 'svelte-i18n';
-
-  export let context: any;
-
-  const {node} = context;
+  import {destroyStorage} from '../utils/storage.svelte';
 
   const signOut = () => {
-    console.log('signOut');
+    destroyStorage('token');
+    location.reload();
   };
 </script>
 
 <nav>
   <ul>
-    <!-- svelte-ignore a11y-invalid-attribute -->
     <li>
-      <a class={$isActive($url('/home')) ? 'active' : ''} href={$url('/home')}
-        >Home</a
-      >
+      <a class={$isActive($url('/home')) ? 'active' : ''} href={$url('/home')}>
+        Home
+      </a>
     </li>
     <li>
       <a
-        class={$isActive($url('/settings')) ? 'active' : ''}
-        href={$url('/settings')}>Settings</a
+        class={$isActive($url('/home/settings')) ? 'active' : ''}
+        href={$url('/home/settings')}
       >
+        Settings
+      </a>
     </li>
     <li>
       <!-- svelte-ignore a11y-invalid-attribute -->
