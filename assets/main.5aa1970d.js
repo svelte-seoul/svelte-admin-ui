@@ -1,1 +1,0 @@
-import{S as i,i as o,s as r,e as f,b as c,f as s,h as l}from"./vendor.ff4ba28f.js";function d(n){let e;return{c(){e=f("div"),e.textContent="This is main!"},m(t,a){c(t,e,a)},p:s,i:s,o:s,d(t){t&&l(e)}}}class u extends i{constructor(e){super();o(this,e,null,d,r,{})}}export{u as default};
