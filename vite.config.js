@@ -7,7 +7,7 @@ import {svelte} from '@sveltejs/vite-plugin-svelte';
 const production = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
-  base: '/',
+  base: production ? "/svelte-admin-ui/" : '/',
   clearScreen: false,
   server: {port: 1337},
   plugins: [
