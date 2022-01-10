@@ -23,7 +23,8 @@
   import {Router} from '@roxi/routify';
   import routes from '../.routify/routes.default.js';
   import type {ThemeStore} from 'svelte-theme';
-  import {getContext} from 'svelte';
+  import {getContext, onMount} from 'svelte';
+  import {registerSW} from 'virtual:pwa-register';
 
   const {changeThemeType} = getContext<ThemeStore>('svelte-theme');
 
@@ -36,6 +37,13 @@
   };
 
   toggleTheme();
+
+  onMount(() => {
+    registerSW({
+      onNeedRefresh() {},
+      onOfflineReady() {},
+    });
+  });
 </script>
 
 <main>
