@@ -1,0 +1,1 @@
+import{S as i,i as a,s as o,e as f,b as c,f as n,h as l}from"./vendor.ff4ba28f.js";function p(e){let t;return{c(){t=f("p")},m(s,r){c(s,t,r),t.innerHTML=e[0]},p:n,i:n,o:n,d(s){s&&l(t)}}}function u(e){return["This is <strong>Settings!</strong>"]}class m extends i{constructor(t){super();a(this,t,u,p,o,{})}}export{m as default};
