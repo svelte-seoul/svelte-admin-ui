@@ -1,1 +1,0 @@
-import{S as i,i as m,s as p,p as r,q as f,r as l}from"./vendor.19208df2.js";import{a as c}from"./userStore.1bf1fadf.js";function d(o,a,t){let e,n,u;return r(o,f,s=>t(0,e=s)),r(o,l,s=>t(1,n=s)),r(o,c,s=>t(2,u=s)),n(e(u?"/home/main":"/auth/sign-in")),[]}class h extends i{constructor(a){super();m(this,a,d,null,p,{})}}export{h as default};
