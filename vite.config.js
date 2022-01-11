@@ -7,7 +7,7 @@ import {svelte} from '@sveltejs/vite-plugin-svelte';
 const production = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
-  base: production ? "/svelte-admin-ui/" : '/',
+  base: '/',
   clearScreen: false,
   server: {port: 1337},
   plugins: [
@@ -38,8 +38,8 @@ export default defineConfig({
           },
         ],
       },
-    }),  
-    routify({}),
+    }),
+    routify(),
     svelte({
       emitCss: true,
       compilerOptions: {dev: !production},

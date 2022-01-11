@@ -72,10 +72,11 @@
   };
 </script>
 
-<div class="edit-text" style={containerStyle}>
+<div class="edit-text" style={containerStyle} data-testid="container">
   <div class="container">
     <slot name="leftElement"><div /></slot>
     <input
+      alt="alt-input"
       style={inputStyle}
       type={type}
       placeholder={placeholder}
