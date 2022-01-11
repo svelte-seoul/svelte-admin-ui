@@ -1,5 +1,5 @@
 module.exports = {
-  setupFiles: ['./jestSetup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/test/jestSetup.ts'],
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
     '^.+\\.svelte$': ['svelte-jester', {'preprocess': true}],

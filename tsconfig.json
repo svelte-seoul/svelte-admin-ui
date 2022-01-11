@@ -5,10 +5,10 @@
     "babel.config.js",
     "svelte.config.cjs",
     "postcss.config.cjs",
-    "jestSetup.ts",
     "jest.config.cjs",
     ".eslintrc.cjs",
-    "vite.config.js"
+    "vite.config.js",
+    "test/**/*"
   ],
   "exclude": ["node_modules/*", "dist"],
   "compilerOptions": {

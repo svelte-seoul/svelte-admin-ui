@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render and props test should render without error 1`] = `
+<body>
+  <div>
+    <div
+      class="edit-text svelte-1wwqp7i"
+      data-testid="container"
+      style=""
+    >
+      <div
+        class="container svelte-1wwqp7i"
+      >
+        <div />
+         
+        <input
+          alt="alt-input"
+          class="svelte-1wwqp7i"
+          placeholder=""
+          style=""
+          type="text"
+        />
+         
+        <div />
+      </div>
+       
+      <div
+        class="errorText svelte-1wwqp7i"
+      >
+        <span
+          style="margin-left: 15px;"
+        >
+          
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -26,16 +26,6 @@
   import {getContext, onMount} from 'svelte';
   import {registerSW} from 'virtual:pwa-register';
 
-  const production = process.env.NODE_ENV === 'production';
-  const urlRewrite = {
-    toExternal: (url: string) => {
-      return production ? `/svelte-admin-ui${url}` : url;
-    },
-    toInternal: (url: string) => {
-      return production ? url.replace(/^\/svelte-admin-ui/, '') : url;
-    },
-  };
-
   const {changeThemeType} = getContext<ThemeStore>('svelte-theme');
 
   const toggleTheme = () => {
@@ -57,5 +47,5 @@
 </script>
 
 <main>
-  <Router routes={routes} urlRewrite={urlRewrite} />
+  <Router routes={routes} />
 </main>
