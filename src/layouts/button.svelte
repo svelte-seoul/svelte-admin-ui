@@ -84,8 +84,6 @@
 </style>
 
 <script lang="ts">
-  import {createEventDispatcher} from 'svelte';
-
   export let primary = false;
   export let secondary = false;
   export let positive = false;
@@ -97,12 +95,6 @@
   export let text = '';
   export let disabled = false;
   export let loading = false;
-
-  const dispatch = createEventDispatcher();
-
-  function handleClick() {
-    dispatch('click');
-  }
 </script>
 
 <button
@@ -117,14 +109,14 @@
   type={type}
   style={style}
   disabled={disabled}
-  on:click={handleClick}
+  on:click
 >
   {#if loading}
-    <div class="loader" />
+    <div class="loader" data-testid="loader" />
   {:else}
     <slot>
       {#if text}
-        <div>{text}</div>
+        <div data-testid="text">{text}</div>
       {/if}
     </slot>
   {/if}
