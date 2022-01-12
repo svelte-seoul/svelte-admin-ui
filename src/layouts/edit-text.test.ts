@@ -10,17 +10,16 @@ describe('render and props test', () => {
     expect(testingLib.container).toMatchSnapshot();
   });
 
-
   it('has placeholder props', () => {
    const {getByRole}  = render(Edittext, {placeholder: 'test'});
 
-   expect(getByRole('textbox').getAttribute('placeholder')).toEqual('test');   
+   expect(getByRole('textbox')).toHaveAttribute('placeholder', 'test');
   });
 
   it('has type props', () => {
     const {getByAltText}  = render(Edittext, {type: 'number'});
 
-    expect(getByAltText('alt-input').getAttribute('type')).toEqual('number');
+    expect(getByAltText('alt-input')).toHaveAttribute('type', 'number');
   });
 
   it('has containerStyle props', () => {
