@@ -51,21 +51,24 @@
   import Button from '../../layouts/button.svelte';
   import {admin} from '../../stores/userStore';
   import {goto, url} from '@roxi/routify';
-  import {setStorage} from '../../utils/storage.svelte';
+  import {setStorage} from '../../utils/storage';
 
   let loading = false;
   let email: string;
   let password: string;
 
   if ($admin) {
-    alert($_('common.already_signed_in'));
+    alert($_('already_signed_in'));
+
     $goto($url('/home/main'));
   }
 
-  const handleLogin = () => {
+  export const handleLogin = () => {
     if (!email || !password) {
       return;
     }
+
+    loading = true;
 
     $admin = {
       displayName: 'admin',
@@ -78,7 +81,7 @@
   };
 </script>
 
-<div class="container">
+<div class="container" data-testid="sign-in-container">
   <img class="logo" src={svgLogo} alt="logo" />
   <h3>{$_('sign-in.title')}</h3>
   <EditText type="email" placeholder="email@email.com" bind:value={email}>

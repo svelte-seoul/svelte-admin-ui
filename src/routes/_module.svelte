@@ -1,7 +1,7 @@
 <script lang="ts">
   import {goto, url} from '@roxi/routify';
   import {admin} from '../stores/userStore';
-  import {getStorage} from '../utils/storage.svelte';
+  import {getStorage} from '../utils/storage';
 
   const shouldRedirect = (): boolean => {
     const ignorePath = ['/auth/sign-in', '/auth/sign-up'];
