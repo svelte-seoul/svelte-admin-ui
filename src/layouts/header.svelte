@@ -1,16 +1,27 @@
 <style lang="postcss">
-  .active {
-    color: var(--link);
-  }
-
-  nav {
-    padding: 10px;
+  .header {
+    padding: 10px 20px;
     font-size: 1rem;
     border-bottom: 1px solid var(--border);
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
     @media (--mobile) {
-      padding: 20px;
-      background-color: red;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 20px 0px;
+    }
+
+    .logo {
+      color: var(--text);
+      font-size: 1.5rem;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--link);
+      }
     }
 
     ul {
@@ -19,31 +30,19 @@
       padding: 0px;
 
       display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-gap: 10px;
-      justify-content: center;
-      justify-items: center;
+      grid-template-columns: repeat(2, min-content);
+      grid-gap: 30px;
+      justify-content: end;
 
-      @media (min-width: 600px) {
-        grid-template-columns: 1fr repeat(3, fit-content(50px));
-        grid-gap: 20px;
-        justify-items: end;
-      }
-
-      li:nth-child(1) {
-        grid-column: 1 / 4;
-
-        @media (min-width: 600px) {
-          grid-column: 1 / 2;
-          justify-self: start;
-        }
+      @media (--mobile) {
+        margin-top: 20px;
+        justify-items: center;
       }
     }
 
-    a {
+    .link {
       position: relative;
       text-decoration: none;
-      pointer: cursor;
 
       &::before {
         content: '';
@@ -62,6 +61,10 @@
         font-size: 1rem;
       }
     }
+
+    .active {
+      color: var(--link);
+    }
   }
 </style>
 
@@ -76,16 +79,13 @@
   };
 </script>
 
-<nav>
+<nav class="header">
+  <a class="logo" href={$url('/home/main')}>Svelte-Admin-UI</a>
   <ul>
     <li>
-      <a class={$isActive($url('/home')) ? 'active' : ''} href={$url('/home')}>
-        Home
-      </a>
-    </li>
-    <li>
       <a
-        class={$isActive($url('/home/settings')) ? 'active' : ''}
+        class="link"
+        class:active={$isActive($url('/home/settings'))}
         href={$url('/home/settings')}
       >
         Settings
@@ -93,7 +93,7 @@
     </li>
     <li>
       <!-- svelte-ignore a11y-invalid-attribute -->
-      <a href="" on:click|preventDefault={signOut}>
+      <a class="link" href="" on:click|preventDefault={signOut}>
         {$_('logout')}
       </a>
     </li>
