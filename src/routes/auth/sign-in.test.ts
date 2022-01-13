@@ -1,8 +1,6 @@
 import {destroyStorage, getStorage, setStorage} from '../../utils/storage';
 
 import SignIn from './sign-in.svelte';
-import type {ThemeStore} from 'svelte-theme';
-import { getContext } from 'svelte';
 import {render} from '@testing-library/svelte';
 import {setUpUser} from '../../../test/testUtils';
 
@@ -31,7 +29,7 @@ describe('interaction test', () => {
 
         await user.click(loginButton);
 
-        expect(getStorage('token')).toBe('temp token')
+        expect(getStorage('token')).toBe('temp token');
     });
 
     it('should redirect to main page when a user already logged in', () => {
@@ -53,6 +51,6 @@ describe('interaction test', () => {
 
         await user.keyboard('{ctrlKey>}{.}');
 
-        expect(currentBackgroundColor).not.toEqual(window.getComputedStyle(container))
+        expect(currentBackgroundColor).not.toEqual(window.getComputedStyle(container));
     });
 });
