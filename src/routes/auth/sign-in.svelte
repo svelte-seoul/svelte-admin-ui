@@ -1,46 +1,33 @@
 <style lang="postcss">
   .container {
-    color: var(--text);
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-self: center;
-    justify-self: center;
-    width: 60%;
+    padding: 50px 30px;
 
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-row-gap: 8px;
+    grid-row-gap: 16px;
 
-    :global(.edit-text) {
-      margin-top: 6px;
+    .logo {
+      width: 20%;
+      align-self: center;
+      justify-self: center;
     }
 
-    :global(.button) {
-      margin-top: 8px;
+    .icon {
+      margin-left: 12px;
+      width: 24px;
     }
-  }
 
-  .logo {
-    filter: var(--logo);
-    width: 20%;
-    align-self: center;
-    justify-self: center;
-  }
+    .text-contrast {
+      color: var(--text-contrast);
+    }
 
-  .icon {
-    margin-left: 12px;
-    width: 24px;
-  }
-
-  .black {
-    color: var(--text-contrast);
-  }
-
-  h3 {
-    margin-bottom: 60px;
-    font-size: 28px;
-    font-weight: 400;
+    h3 {
+      text-align: center;
+      margin-bottom: 60px;
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
   }
 </style>
 
@@ -91,7 +78,7 @@
     <img slot="leftElement" class="icon" src={svgLock} alt="lock" />
   </EditText>
   <Button on:click={handleLogin} primary disabled={loading} loading={loading}>
-    <div class="black">
+    <div class="text-contrast">
       {$_('sign-in.login')}
     </div>
   </Button>
@@ -102,7 +89,7 @@
     text={$_('sign-in.sign-up')}
   />
   <Button
-    style="margin-top: -2px; font-size: 14px; text-decoration: underline;"
+    style="margin-top: -2px; font-size: 1rem; text-decoration: underline;"
     transparent
     on:click={() => {}}
     disabled={loading}

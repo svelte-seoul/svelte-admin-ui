@@ -45,39 +45,39 @@ Object {
       },
       "root": <div>
         <div
-          class="container svelte-1mo0081"
+          class="container svelte-5hdqa"
           data-testid="sign-in-container"
         >
           <img
             alt="logo"
-            class="logo svelte-1mo0081"
+            class="logo svelte-5hdqa"
             src="[object Object]"
           />
            
           <h3
-            class="svelte-1mo0081"
+            class="svelte-5hdqa"
           >
             User Program
           </h3>
            
           <div
-            class="edit-text svelte-1wwqp7i"
+            class="edit-text svelte-xguohu"
             data-testid="container"
             style=""
           >
             <div
-              class="container svelte-1wwqp7i"
+              class="container svelte-xguohu"
             >
               <img
                 alt="email"
-                class="icon svelte-1mo0081"
+                class="icon svelte-5hdqa"
                 slot="leftElement"
                 src="[object Object]"
               />
                
               <input
                 alt="alt-input"
-                class="svelte-1wwqp7i"
+                class="svelte-xguohu"
                 placeholder="email@email.com"
                 style=""
                 type="email"
@@ -86,35 +86,26 @@ Object {
               <div />
             </div>
              
-            <div
-              class="errorText svelte-1wwqp7i"
-            >
-              <span
-                style="margin-left: 15px;"
-              >
-                
-              </span>
-            </div>
           </div>
            
           <div
-            class="edit-text svelte-1wwqp7i"
+            class="edit-text svelte-xguohu"
             data-testid="container"
             style=""
           >
             <div
-              class="container svelte-1wwqp7i"
+              class="container svelte-xguohu"
             >
               <img
                 alt="lock"
-                class="icon svelte-1mo0081"
+                class="icon svelte-5hdqa"
                 slot="leftElement"
                 src="[object Object]"
               />
                
               <input
                 alt="alt-input"
-                class="svelte-1wwqp7i"
+                class="svelte-xguohu"
                 placeholder="********"
                 style=""
                 type="password"
@@ -123,15 +114,6 @@ Object {
               <div />
             </div>
              
-            <div
-              class="errorText svelte-1wwqp7i"
-            >
-              <span
-                style="margin-left: 15px;"
-              >
-                
-              </span>
-            </div>
           </div>
            
           <button
@@ -139,7 +121,7 @@ Object {
             style=""
           >
             <div
-              class="black svelte-1mo0081"
+              class="text-contrast svelte-5hdqa"
             >
               Login
             </div>
@@ -179,39 +161,39 @@ Object {
   "container": <body>
     <div>
       <div
-        class="container svelte-1mo0081"
+        class="container svelte-5hdqa"
         data-testid="sign-in-container"
       >
         <img
           alt="logo"
-          class="logo svelte-1mo0081"
+          class="logo svelte-5hdqa"
           src="[object Object]"
         />
          
         <h3
-          class="svelte-1mo0081"
+          class="svelte-5hdqa"
         >
           User Program
         </h3>
          
         <div
-          class="edit-text svelte-1wwqp7i"
+          class="edit-text svelte-xguohu"
           data-testid="container"
           style=""
         >
           <div
-            class="container svelte-1wwqp7i"
+            class="container svelte-xguohu"
           >
             <img
               alt="email"
-              class="icon svelte-1mo0081"
+              class="icon svelte-5hdqa"
               slot="leftElement"
               src="[object Object]"
             />
              
             <input
               alt="alt-input"
-              class="svelte-1wwqp7i"
+              class="svelte-xguohu"
               placeholder="email@email.com"
               style=""
               type="email"
@@ -220,35 +202,26 @@ Object {
             <div />
           </div>
            
-          <div
-            class="errorText svelte-1wwqp7i"
-          >
-            <span
-              style="margin-left: 15px;"
-            >
-              
-            </span>
-          </div>
         </div>
          
         <div
-          class="edit-text svelte-1wwqp7i"
+          class="edit-text svelte-xguohu"
           data-testid="container"
           style=""
         >
           <div
-            class="container svelte-1wwqp7i"
+            class="container svelte-xguohu"
           >
             <img
               alt="lock"
-              class="icon svelte-1mo0081"
+              class="icon svelte-5hdqa"
               slot="leftElement"
               src="[object Object]"
             />
              
             <input
               alt="alt-input"
-              class="svelte-1wwqp7i"
+              class="svelte-xguohu"
               placeholder="********"
               style=""
               type="password"
@@ -257,15 +230,6 @@ Object {
             <div />
           </div>
            
-          <div
-            class="errorText svelte-1wwqp7i"
-          >
-            <span
-              style="margin-left: 15px;"
-            >
-              
-            </span>
-          </div>
         </div>
          
         <button
@@ -273,7 +237,7 @@ Object {
           style=""
         >
           <div
-            class="black svelte-1mo0081"
+            class="text-contrast svelte-5hdqa"
           >
             Login
           </div>

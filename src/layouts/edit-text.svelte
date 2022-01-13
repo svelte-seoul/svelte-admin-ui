@@ -1,10 +1,11 @@
 <!-- svelte-ignore css-unused-selector -->
 <style lang="postcss">
   .edit-text {
+    border: 1px solid var(--border, #3d3d3d);
+
     display: grid;
     grid-template-rows: 1fr min-content;
     grid-auto-flow: row;
-    border: 1px solid var(--border, #3d3d3d);
 
     &:focus-within {
       border: 1px solid var(--text);
@@ -13,17 +14,16 @@
     .container {
       box-sizing: border-box;
       border-radius: 4px;
-      grid-auto-flow: column;
-
       filter: invert(0.5);
+
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: min-content 1fr min-content;
+      align-items: center;
 
       &:focus-within {
         filter: var(--logo);
       }
-
-      display: grid;
-      grid-template-columns: min-content 1fr min-content;
-      align-items: center;
     }
 
     input {
@@ -31,7 +31,7 @@
       color: white;
       caret-color: white;
       text-transform: none;
-      font-size: var(--font-size, 14px);
+      font-size: var(--font-size, 1rem);
       padding: 12px 16px;
       font-family: inherit;
       border: none;
@@ -48,7 +48,8 @@
 
     .errorText {
       color: red;
-      font-size: var(--font-size, 14px);
+      font-size: var(--font-size, 1rem);
+
       display: grid;
       justify-self: start;
     }
@@ -84,9 +85,11 @@
     />
     <slot name="rightElement"><div /></slot>
   </div>
-  <div class="errorText">
-    <span style="margin-left: 15px">
-      {errorText}
-    </span>
-  </div>
+  {#if errorText}
+    <div class="errorText">
+      <span style="margin-left: 15px">
+        {errorText}
+      </span>
+    </div>
+  {/if}
 </div>

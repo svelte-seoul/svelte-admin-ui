@@ -20,7 +20,7 @@
     border: none;
     color: var(--gray70);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .medium {

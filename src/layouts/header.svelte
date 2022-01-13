@@ -8,8 +8,9 @@
     font-size: 1rem;
     border-bottom: 1px solid var(--border);
 
-    @media (min-width: 600px) {
+    @media (--mobile) {
       padding: 20px;
+      background-color: red;
     }
 
     ul {
