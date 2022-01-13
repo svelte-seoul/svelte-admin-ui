@@ -7,6 +7,7 @@ specifiers:
   '@dooboo/eslint-config-svelte': ^0.0.7
   '@roxi/routify': ^3.0.0-next.77
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.34
+  '@testing-library/dom': ^8.11.1
   '@testing-library/jest-dom': ^5.16.1
   '@testing-library/svelte': ^3.0.3
   '@testing-library/user-event': ^14.0.0-beta
@@ -50,9 +51,10 @@ devDependencies:
   '@dooboo/eslint-config-svelte': 0.0.7_29b475f3173ca30af2fd9e966c277d5e
   '@roxi/routify': 3.0.0-next.77
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.34_svelte@3.46.1+vite@2.7.10
+  '@testing-library/dom': 8.11.1
   '@testing-library/jest-dom': 5.16.1
   '@testing-library/svelte': 3.0.3_svelte@3.46.1
-  '@testing-library/user-event': 14.0.0-beta.7
+  '@testing-library/user-event': 14.0.0-beta.7_@testing-library+dom@8.11.1
   '@tsconfig/svelte': 3.0.0
   '@types/jest': 27.4.0
   '@types/node': 17.0.8
@@ -1756,6 +1758,20 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
+  /@testing-library/dom/8.11.1:
+    resolution: {integrity: sha512-3KQDyx9r0RKYailW2MiYrSSKEfH0GTkI51UGEvJenvcoDoeRYs0PZpi2SXqtnMClQvCqdtTTpOfFETDTVADpAg==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@babel/code-frame': 7.16.7
+      '@babel/runtime': 7.16.7
+      '@types/aria-query': 4.2.2
+      aria-query: 5.0.0
+      chalk: 4.1.2
+      dom-accessibility-api: 0.5.10
+      lz-string: 1.4.4
+      pretty-format: 27.4.6
+    dev: true
+
   /@testing-library/jest-dom/5.16.1:
     resolution: {integrity: sha512-ajUJdfDIuTCadB79ukO+0l8O+QwN0LiSxDaYUTI4LndbbUsGi6rWU1SCexXzBA2NSjlVB9/vbkasQIL3tmPBjw==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
@@ -1781,13 +1797,14 @@ packages:
       svelte: 3.46.1
     dev: true
 
-  /@testing-library/user-event/14.0.0-beta.7:
+  /@testing-library/user-event/14.0.0-beta.7_@testing-library+dom@8.11.1:
     resolution: {integrity: sha512-VYpTXUIPWpma1AbtuZnzLdoGr1yz1CMJU+A9rVMIez40V5ycvWiAbgDYh+rAdWItj5nXCC5G73bDNppYgC+8QQ==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
       '@babel/runtime': 7.16.7
+      '@testing-library/dom': 8.11.1
     dev: true
 
   /@tootallnate/once/1.1.2:
