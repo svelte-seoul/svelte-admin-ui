@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render test should render without crashing 1`] = `
+Object {
+  "component": Sign_in {
+    "$$": Object {
+      "after_update": Array [],
+      "before_update": Array [],
+      "bound": Object {},
+      "callbacks": Object {},
+      "context": Map {},
+      "ctx": Array [
+        [Function],
+        false,
+        "",
+        "",
+        [Function],
+        [Function],
+        [Function],
+      ],
+      "dirty": Array [
+        -1,
+      ],
+      "fragment": Object {
+        "c": [Function],
+        "d": [Function],
+        "i": [Function],
+        "l": [Function],
+        "m": [Function],
+        "o": [Function],
+        "p": [Function],
+      },
+      "not_equal": [Function],
+      "on_destroy": Array [
+        [Function],
+        [Function],
+        [Function],
+        [Function],
+        [Function],
+      ],
+      "on_disconnect": Array [],
+      "on_mount": Array [],
+      "props": Object {
+        "handleLogin": 0,
+      },
+      "root": <div>
+        <div
+          class="container svelte-1mo0081"
+          data-testid="sign-in-container"
+        >
+          <img
+            alt="logo"
+            class="logo svelte-1mo0081"
+            src="[object Object]"
+          />
+           
+          <h3
+            class="svelte-1mo0081"
+          >
+            User Program
+          </h3>
+           
+          <div
+            class="edit-text svelte-1wwqp7i"
+            data-testid="container"
+            style=""
+          >
+            <div
+              class="container svelte-1wwqp7i"
+            >
+              <img
+                alt="email"
+                class="icon svelte-1mo0081"
+                slot="leftElement"
+                src="[object Object]"
+              />
+               
+              <input
+                alt="alt-input"
+                class="svelte-1wwqp7i"
+                placeholder="email@email.com"
+                style=""
+                type="email"
+              />
+               
+              <div />
+            </div>
+             
+            <div
+              class="errorText svelte-1wwqp7i"
+            >
+              <span
+                style="margin-left: 15px;"
+              >
+                
+              </span>
+            </div>
+          </div>
+           
+          <div
+            class="edit-text svelte-1wwqp7i"
+            data-testid="container"
+            style=""
+          >
+            <div
+              class="container svelte-1wwqp7i"
+            >
+              <img
+                alt="lock"
+                class="icon svelte-1mo0081"
+                slot="leftElement"
+                src="[object Object]"
+              />
+               
+              <input
+                alt="alt-input"
+                class="svelte-1wwqp7i"
+                placeholder="********"
+                style=""
+                type="password"
+              />
+               
+              <div />
+            </div>
+             
+            <div
+              class="errorText svelte-1wwqp7i"
+            >
+              <span
+                style="margin-left: 15px;"
+              >
+                
+              </span>
+            </div>
+          </div>
+           
+          <button
+            class="button svelte-dp9g4h primary medium"
+            style=""
+          >
+            <div
+              class="black svelte-1mo0081"
+            >
+              Login
+            </div>
+          </button>
+           
+          <button
+            class="button svelte-dp9g4h medium"
+            style=""
+          >
+            <div
+              data-testid="text"
+            >
+              Sign Up
+            </div>
+            
+          </button>
+           
+          <button
+            class="button svelte-dp9g4h transparent medium"
+            style="margin-top: -2px; font-size: 14px; text-decoration: underline;"
+          >
+            <div
+              data-testid="text"
+            >
+              Look around
+            </div>
+            
+          </button>
+        </div>
+      </div>,
+      "skip_bound": false,
+      "update": [Function],
+    },
+    "$capture_state": [Function],
+    "$inject_state": [Function],
+  },
+  "container": <body>
+    <div>
+      <div
+        class="container svelte-1mo0081"
+        data-testid="sign-in-container"
+      >
+        <img
+          alt="logo"
+          class="logo svelte-1mo0081"
+          src="[object Object]"
+        />
+         
+        <h3
+          class="svelte-1mo0081"
+        >
+          User Program
+        </h3>
+         
+        <div
+          class="edit-text svelte-1wwqp7i"
+          data-testid="container"
+          style=""
+        >
+          <div
+            class="container svelte-1wwqp7i"
+          >
+            <img
+              alt="email"
+              class="icon svelte-1mo0081"
+              slot="leftElement"
+              src="[object Object]"
+            />
+             
+            <input
+              alt="alt-input"
+              class="svelte-1wwqp7i"
+              placeholder="email@email.com"
+              style=""
+              type="email"
+            />
+             
+            <div />
+          </div>
+           
+          <div
+            class="errorText svelte-1wwqp7i"
+          >
+            <span
+              style="margin-left: 15px;"
+            >
+              
+            </span>
+          </div>
+        </div>
+         
+        <div
+          class="edit-text svelte-1wwqp7i"
+          data-testid="container"
+          style=""
+        >
+          <div
+            class="container svelte-1wwqp7i"
+          >
+            <img
+              alt="lock"
+              class="icon svelte-1mo0081"
+              slot="leftElement"
+              src="[object Object]"
+            />
+             
+            <input
+              alt="alt-input"
+              class="svelte-1wwqp7i"
+              placeholder="********"
+              style=""
+              type="password"
+            />
+             
+            <div />
+          </div>
+           
+          <div
+            class="errorText svelte-1wwqp7i"
+          >
+            <span
+              style="margin-left: 15px;"
+            >
+              
+            </span>
+          </div>
+        </div>
+         
+        <button
+          class="button svelte-dp9g4h primary medium"
+          style=""
+        >
+          <div
+            class="black svelte-1mo0081"
+          >
+            Login
+          </div>
+        </button>
+         
+        <button
+          class="button svelte-dp9g4h medium"
+          style=""
+        >
+          <div
+            data-testid="text"
+          >
+            Sign Up
+          </div>
+          
+        </button>
+         
+        <button
+          class="button svelte-dp9g4h transparent medium"
+          style="margin-top: -2px; font-size: 14px; text-decoration: underline;"
+        >
+          <div
+            data-testid="text"
+          >
+            Look around
+          </div>
+          
+        </button>
+      </div>
+    </div>
+  </body>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

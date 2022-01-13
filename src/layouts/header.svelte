@@ -67,7 +67,7 @@
 <script lang="ts">
   import {isActive, url} from '@roxi/routify';
   import {_} from 'svelte-i18n';
-  import {destroyStorage} from '../utils/storage.svelte';
+  import {destroyStorage} from '../utils/storage';
 
   const signOut = () => {
     destroyStorage('token');
