@@ -1,0 +1,3 @@
+import{S as b,i as h,s as m,e as f,A as g,B as p,a as o,b as x,C as s,f as _,h as y,r as k,w as C}from"./vendor.2e39e860.js";function $(c){let e,a,l,t,v,r,d,i;return{c(){e=f("div"),a=f("div"),a.textContent="404",l=g(),t=f("div"),v=p(`Page not found.
+    
+    `),r=f("a"),d=p("Go back"),o(a,"class","huge svelte-17crrry"),o(r,"href",i=c[0]("../")),o(t,"class","big"),o(e,"class","e404 svelte-17crrry")},m(n,u){x(n,e,u),s(e,a),s(e,l),s(e,t),s(t,v),s(t,r),s(r,d)},p(n,[u]){u&1&&i!==(i=n[0]("../"))&&o(r,"href",i)},i:_,o:_,d(n){n&&y(e)}}}function S(c,e,a){let l;return k(c,C,t=>a(0,l=t)),[l]}class q extends b{constructor(e){super();h(this,e,S,$,m,{})}}export{q as default};
