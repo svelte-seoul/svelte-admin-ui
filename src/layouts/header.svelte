@@ -88,7 +88,7 @@
         class:active={$isActive($url('/home/settings'))}
         href={$url('/home/settings')}
       >
-        Settings
+        {$_('setting')}
       </a>
     </li>
     <li>

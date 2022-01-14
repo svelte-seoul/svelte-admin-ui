@@ -74,7 +74,7 @@
           class:active={$isActive($url('/home/main'))}
           href={$url('/home/main')}
         >
-          Home
+          {$_('home')}
         </a>
       </li>
       <li>
@@ -82,7 +82,7 @@
           class:active={$isActive($url('/home/users'))}
           href={$url('/home/users')}
         >
-          Users
+          {$_('user')}
         </a>
       </li>
     </ul>
