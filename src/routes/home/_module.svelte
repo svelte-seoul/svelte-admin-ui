@@ -16,40 +16,31 @@
   import {writable, derived} from 'svelte/store';
   import {MOBILE_SIZE} from '../../utils/constant';
 
-  let isClosed = false;
-  const main = writable<Element>();
-  const width = derived<Readable<unknown>, number>(main, ($main, set) => {
-    if (!$main) {
-      return;
-    }
+  const container = writable<Element>();
+  const containerWidth = derived<Readable<unknown>, number>(
+    container,
+    ($container, set) => {
+      if (!$container) {
+        return;
+      }
 
-    const observer = new ResizeObserver(([entry]) => {
-      set(entry.contentRect.width);
-    });
+      const observer = new ResizeObserver(([entry]) => {
+        set(entry.contentRect.width);
+      });
 
-    observer.observe($main);
+      observer.observe($container);
 
-    return () => observer.disconnect();
-  });
+      return () => observer.disconnect();
+    },
+  );
 
-  width.subscribe((value) => {
-    if (value > MOBILE_SIZE) {
-      isClosed = false;
-    } else {
-      isClosed = true;
-    }
-  });
+  $: isMobile = $containerWidth < MOBILE_SIZE;
 </script>
 
-<main class="container" bind:this={$main}>
+<main class="container" bind:this={$container}>
   <Header />
   <div class="content">
-    <Sidebar
-      isMobile={isClosed}
-      on:opened={() => {
-        isClosed = !isClosed;
-      }}
-    />
+    <Sidebar isMobile={isMobile} />
     <slot />
   </div>
 </main>

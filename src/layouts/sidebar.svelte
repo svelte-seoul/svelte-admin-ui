@@ -35,11 +35,11 @@
       color: var(--link);
     }
   }
-  .open {
+  .closed {
     width: 45px;
   }
 
-  .open-list {
+  .closed-list {
     display: none;
   }
 </style>
@@ -48,26 +48,21 @@
   import {isActive, url} from '@roxi/routify';
   import {svgHamburger} from '../utils/icons';
   import {_} from 'svelte-i18n';
-  import {createEventDispatcher} from 'svelte';
 
   export let isMobile: boolean;
-
-  const dispatch = createEventDispatcher();
-
-  const onHandleOpened = () => {
-    dispatch('opened');
-  };
 </script>
 
-<aside class:open={isMobile}>
+<aside class:closed={isMobile}>
   <img
     src={svgHamburger}
     alt="hambuger"
     class="icon"
-    on:click={onHandleOpened}
+    on:click={() => {
+      isMobile = !isMobile;
+    }}
   />
-  <div class:open-list={isMobile} class="profile">Profile</div>
-  <nav class:open-list={isMobile}>
+  <div class:closed-list={isMobile} class="profile">Profile</div>
+  <nav class:closed-list={isMobile}>
     <ul>
       <li>
         <a
