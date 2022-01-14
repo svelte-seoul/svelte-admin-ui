@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render test render without crashing 1`] = `
+<body>
+  <div>
+    <nav
+      class="header svelte-5agz0t"
+    >
+      <a
+        class="logo svelte-5agz0t"
+        href="mockURL"
+      >
+        Svelte-Admin-UI
+      </a>
+       
+      <ul
+        class="svelte-5agz0t"
+      >
+        <li>
+          <a
+            class="link svelte-5agz0t active"
+            href="mockURL"
+          >
+            Settings
+          </a>
+        </li>
+         
+        <li>
+          <a
+            class="link svelte-5agz0t"
+            href=""
+          >
+            logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+`;
