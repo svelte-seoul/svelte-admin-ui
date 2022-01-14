@@ -4,7 +4,7 @@ exports[`render and props test should render without error 1`] = `
 <body>
   <div>
     <button
-      class="button svelte-dp9g4h medium"
+      class="button svelte-1ho0o medium"
       style=""
     >
       

@@ -4,18 +4,18 @@ exports[`render and props test should render without error 1`] = `
 <body>
   <div>
     <div
-      class="edit-text svelte-1wwqp7i"
+      class="edit-text svelte-1q1fx2"
       data-testid="container"
       style=""
     >
       <div
-        class="container svelte-1wwqp7i"
+        class="container svelte-1q1fx2"
       >
         <div />
          
         <input
           alt="alt-input"
-          class="svelte-1wwqp7i"
+          class="svelte-1q1fx2"
           placeholder=""
           style=""
           type="text"
@@ -24,15 +24,6 @@ exports[`render and props test should render without error 1`] = `
         <div />
       </div>
        
-      <div
-        class="errorText svelte-1wwqp7i"
-      >
-        <span
-          style="margin-left: 15px;"
-        >
-          
-        </span>
-      </div>
     </div>
   </div>
 </body>

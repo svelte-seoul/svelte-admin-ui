@@ -59,6 +59,4 @@ describe('interaction test', () => {
 
     expect(mockFn).not.toHaveBeenCalled();
   });
-
-  it.todo('should trigger on click event when clicked');
 });

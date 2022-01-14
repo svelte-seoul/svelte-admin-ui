@@ -12,5 +12,8 @@
     "look-around": "Look around",
     "logout": "Logout"
   },
-  "already_signed_in": "Already signed in"
+  "already_signed_in": "Already signed in",
+  "home": "Home",
+  "user": "User",
+  "setting": "Settings"
 }
