@@ -5,7 +5,7 @@ module.exports = {
     '^.+\\.(js|ts)$': 'ts-jest',
     '^.+\\.svelte$': ['svelte-jester', {'preprocess': true}],
   },
-  moduleNameMapper: {'^.+\\.(css|less|scss|svg)$': 'babel-jest', '^(\\.{1,2}/.*)\\.js$': '$1',},
+  moduleNameMapper: {'^.+\\.(css|less|scss|svg)$': 'babel-jest', '^(\\.{1,2}/.*)\\.js$': '$1'},
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?|svelte?)$',
   moduleFileExtensions: ['js', 'ts', 'svelte'],
   modulePathIgnorePatterns: ['dist', 'build'],

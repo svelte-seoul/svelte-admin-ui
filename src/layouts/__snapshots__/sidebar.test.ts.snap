@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render test should render without crash 1`] = `
+<body>
+  <div>
+    <aside
+      class="svelte-1jcti8y"
+      data-testid="container"
+    >
+      <img
+        alt="hamburger"
+        class="icon svelte-1jcti8y"
+        src="[object Object]"
+      />
+       
+      <div
+        class="profile svelte-1jcti8y"
+      >
+        Profile
+      </div>
+       
+      <nav
+        class="svelte-1jcti8y"
+      >
+        <ul
+          class="svelte-1jcti8y"
+        >
+          <li>
+            <a
+              class="svelte-1jcti8y active"
+              href="mockURL"
+            >
+              Home
+            </a>
+          </li>
+           
+          <li>
+            <a
+              class="svelte-1jcti8y active"
+              href="mockURL"
+            >
+              User
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</body>
+`;

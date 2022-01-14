@@ -52,10 +52,10 @@
   export let isMobile: boolean;
 </script>
 
-<aside class:closed={isMobile}>
+<aside class:closed={isMobile} data-testid="container">
   <img
     src={svgHamburger}
-    alt="hambuger"
+    alt="hamburger"
     class="icon"
     on:click={() => {
       isMobile = !isMobile;
