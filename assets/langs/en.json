@@ -9,11 +9,11 @@
     "title": "User Program",
     "login": "Login",
     "sign-up": "Sign Up",
-    "look-around": "Look around",
-    "logout": "Logout"
+    "look-around": "Look around"
   },
   "already_signed_in": "Already signed in",
   "home": "Home",
   "user": "User",
-  "setting": "Settings"
+  "setting": "Settings",
+  "logout": "Logout"
 }

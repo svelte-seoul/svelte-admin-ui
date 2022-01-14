@@ -12,6 +12,20 @@ describe('render test', () => {
 });
 
 describe('interaction test', () => {
+    // eslint-disable-next-line @typescript-eslint/unbound-method
+    const {reload} = window.location;
+
+    beforeAll(() => {
+      Object.defineProperty(window, 'location', {
+        writable: true,
+        value: {reload: jest.fn()},
+      });
+    });
+
+    afterAll(() => {
+      window.location.reload = reload;
+    });
+
     it('should log out when a user click logout button', async () => {
         const {getAllByRole, user} = setUpUser(Header);
 
@@ -20,5 +34,7 @@ describe('interaction test', () => {
         await user.click(logoutATag);
 
         expect(getStorage('token')).toBeNull();
+        // eslint-disable-next-line @typescript-eslint/unbound-method
+        expect(window.location.reload).toHaveBeenCalledTimes(1);
     });
 });

@@ -16,8 +16,6 @@
         displayName: 'admin',
         role: 'MAIN',
       };
-
-      $goto($url('/home/main'));
     } else if (shouldRedirect()) {
       $goto($url('/auth/sign-in'));
     }

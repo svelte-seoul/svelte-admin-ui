@@ -30,7 +30,7 @@ exports[`render test render without crashing 1`] = `
             class="link svelte-5agz0t"
             href=""
           >
-            logout
+            Logout
           </a>
         </li>
       </ul>

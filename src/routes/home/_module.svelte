@@ -2,11 +2,16 @@
   .container {
     display: grid;
     grid-template-rows: min-content 1fr;
-  }
-  .content {
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: 1fr;
+
+    .content {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-template-rows: 1fr;
+    }
+
+    .main-content {
+      overflow: auto;
+    }
   }
 </style>
 
@@ -41,6 +46,8 @@
   <Header />
   <div class="content">
     <Sidebar isMobile={isMobile} />
-    <slot />
+    <div class="main-content">
+      <slot />
+    </div>
   </div>
 </main>

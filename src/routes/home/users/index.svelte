@@ -11,7 +11,7 @@
     grid-auto-rows: min-content;
     min-width: 100%;
     /* These are just initial values which are overriden using JavaScript when a column is resized */
-    grid-template-columns: 
+    grid-template-columns:
       minmax(150px, 1fr)
       minmax(150px, 1.67fr)
       minmax(150px, 1.67fr)
@@ -32,7 +32,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      
+
       justify-items: start;
     }
 
@@ -74,9 +74,9 @@
     }
   }
 </style>
-<script lang="ts">
-import {goto, url} from "@roxi/routify";
 
+<script lang="ts">
+  import {url} from '@roxi/routify';
 
   type User = {
     id: string;
@@ -85,7 +85,7 @@ import {goto, url} from "@roxi/routify";
     email: string;
     street: string;
     country: string;
-  }
+  };
 
   const users: User[] = [
     {
@@ -115,7 +115,7 @@ import {goto, url} from "@roxi/routify";
   ];
 
   const handleClick = (user: User) => {
-    location.href = $url('/users/[id]', {id: user.id});
+    location.href = $url('/home/users/[id]', {id: user.id});
   };
 </script>
 
@@ -123,12 +123,13 @@ import {goto, url} from "@roxi/routify";
   <table>
     <thead>
       <tr>
-        <th data-type="numeric">ID <span class="resize-handle"></span></th>
-        <th data-type="text-short">First name <span class="resize-handle"></span></th>
-        <th data-type="text-short">Last name <span class="resize-handle"></span></th>
-        <th data-type="text-short">Email <span class="resize-handle"></span></th>
-        <th data-type="text-long">Street <span class="resize-handle"></span></th>
-        <th data-type="text-short">Country <span class="resize-handle"></span></th>
+        <th data-type="numeric">ID <span class="resize-handle" /></th>
+        <th data-type="text-short">First name <span class="resize-handle" /></th
+        >
+        <th data-type="text-short">Last name <span class="resize-handle" /></th>
+        <th data-type="text-short">Email <span class="resize-handle" /></th>
+        <th data-type="text-long">Street <span class="resize-handle" /></th>
+        <th data-type="text-short">Country <span class="resize-handle" /></th>
       </tr>
     </thead>
     <tbody>
