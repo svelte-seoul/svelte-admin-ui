@@ -4,18 +4,18 @@ exports[`render and props test should render without error 1`] = `
 <body>
   <div>
     <div
-      class="edit-text svelte-xguohu"
+      class="edit-text svelte-1q1fx2"
       data-testid="container"
       style=""
     >
       <div
-        class="container svelte-xguohu"
+        class="container svelte-1q1fx2"
       >
         <div />
          
         <input
           alt="alt-input"
-          class="svelte-xguohu"
+          class="svelte-1q1fx2"
           placeholder=""
           style=""
           type="text"
