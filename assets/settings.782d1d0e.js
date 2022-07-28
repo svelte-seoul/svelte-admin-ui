@@ -1,1 +1,0 @@
-import{S as r,i,s as o,e as c,b as f,f as n,h as l}from"./vendor.caea49fa.js";function p(e){let t;return{c(){t=c("p")},m(s,a){f(s,t,a),t.innerHTML=e[0]},p:n,i:n,o:n,d(s){s&&l(t)}}}function u(e){return["This is <strong>Settings!</strong>"]}class m extends r{constructor(t){super();i(this,t,u,p,o,{})}}export{m as default};
