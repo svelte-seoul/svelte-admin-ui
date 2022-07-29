@@ -1,0 +1,1 @@
+import{S as i,i as m,s as p,d as r}from"./index.bc289d5c.js";import{u as l,g as c}from"./index.69d7ba71.js";import{a as f}from"./userStore.0d12dc83.js";function g(t,a,s){let e,n,u;return r(t,l,o=>s(0,e=o)),r(t,c,o=>s(1,n=o)),r(t,f,o=>s(2,u=o)),n(e(u?"/home/main":"/auth/sign-in")),[]}class b extends i{constructor(a){super(),m(this,a,g,null,p,{})}}export{b as default};

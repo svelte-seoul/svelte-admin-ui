@@ -1,0 +1,1 @@
+import{S as i,i as o,s as r,k as c,o as l,r as s,v as m}from"./index.bc289d5c.js";function u(n){let t;return{c(){t=c("div"),t.textContent="This is main!"},m(e,a){l(e,t,a)},p:s,i:s,o:s,d(e){e&&m(t)}}}class f extends i{constructor(t){super(),o(this,t,null,u,r,{})}}export{f as default};

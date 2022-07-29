@@ -1,0 +1,1 @@
+import{S as i,i as a,s as o,k as c,o as f,r as n,v as l}from"./index.bc289d5c.js";function p(e){let t;return{c(){t=c("p")},m(s,r){f(s,t,r),t.innerHTML=e[0]},p:n,i:n,o:n,d(s){s&&l(t)}}}function u(e){return["This is <strong>Settings!</strong>"]}class m extends i{constructor(t){super(),a(this,t,u,p,o,{})}}export{m as default};
